@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.7 on win32)" generated="2026-01-21T10:21:10.509913" rpa="false" schemaversion="5">
+<suite id="s1" name="Guitarweb" source="C:\Users\Saharat\Desktop\robotframework\guitartest\guitarweb.robot">
+<test id="s1-t1" name="testcase1: Sort Price Low to High" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:10.768228" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Project/Guitar/home.php'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-21T10:21:10.768228" elapsed="1.151947"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/section[2]/div/div[2]/div[1]/form/div/div[1]/input[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:11.920175" elapsed="0.376484"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:12.297667" level="INFO">Clicking element 'xpath:/html/body/section[2]/div/div[2]/div[1]/form/div/div[1]/input[1]'.</msg>
+<arg>xpath:/html/body/section[2]/div/div[2]/div[1]/form/div/div[1]/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:12.297667" elapsed="0.222002"/>
+</kw>
+<doc>This test sort price from low to high</doc>
+<status status="PASS" start="2026-01-21T10:21:10.767228" elapsed="1.753498"/>
+</test>
+<test id="s1-t2" name="testcase2: Sort Price High to Low" line="16">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/section[2]/div/div[2]/div[1]/form/div/div[1]/input[2]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:12.521727" elapsed="0.322077"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:12.844603" level="INFO">Clicking element 'xpath:/html/body/section[2]/div/div[2]/div[1]/form/div/div[1]/input[2]'.</msg>
+<arg>xpath:/html/body/section[2]/div/div[2]/div[1]/form/div/div[1]/input[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:12.843804" elapsed="0.084294"/>
+</kw>
+<doc>This test sort price from high to low</doc>
+<status status="PASS" start="2026-01-21T10:21:12.520726" elapsed="0.407372"/>
+</test>
+<test id="s1-t3" name="testcase3: Filter by Brand" line="21">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Fender"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:12.929099" elapsed="0.340250"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:13.272777" level="INFO">Clicking element 'xpath://*[@id="Fender"]'.</msg>
+<arg>xpath://*[@id="Fender"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:13.271828" elapsed="0.228404"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Fender"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-21T10:21:13.501203" elapsed="0.020087"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Squier"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:13.521290" elapsed="0.277996"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:13.800913" level="INFO">Clicking element 'xpath://*[@id="Squier"]'.</msg>
+<arg>xpath://*[@id="Squier"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:13.799863" elapsed="0.195585"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Squier"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-21T10:21:13.997494" elapsed="0.061751"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Gibson"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:14.059245" elapsed="0.284330"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:14.344585" level="INFO">Clicking element 'xpath://*[@id="Gibson"]'.</msg>
+<arg>xpath://*[@id="Gibson"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:14.344585" elapsed="0.119973"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Gibson"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-21T10:21:14.465867" elapsed="0.066827"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Epiphone"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:14.533823" elapsed="0.311739"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:14.846560" level="INFO">Clicking element 'xpath://*[@id="Epiphone"]'.</msg>
+<arg>xpath://*[@id="Epiphone"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:14.845562" elapsed="0.169774"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Epiphone"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-21T10:21:15.015336" elapsed="0.032670"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Ibanez"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:15.049529" elapsed="0.297956"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:15.351222" level="INFO">Clicking element 'xpath://*[@id="Ibanez"]'.</msg>
+<arg>xpath://*[@id="Ibanez"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:15.350171" elapsed="0.110927"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Ibanez"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-21T10:21:15.462096" elapsed="0.039211"/>
+</kw>
+<doc>This test filter by brand</doc>
+<status status="PASS" start="2026-01-21T10:21:12.928098" elapsed="2.573209"/>
+</test>
+<test id="s1-t4" name="testcase4: Range of price" line="44">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="minpricerange"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:15.502290" elapsed="0.294302"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="maxpricerange"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:15.797579" elapsed="0.300170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://*[@id="minpricerange"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.099284" elapsed="0.051526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://*[@id="maxpricerange"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.151811" elapsed="0.046419"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:16.199766" level="INFO">Executing JavaScript:
+document.querySelector('#minpricerange').value = 15000;
+Without any arguments.</msg>
+<arg>document.querySelector('#minpricerange').value = 15000;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.198230" elapsed="0.014172"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:16.213382" level="INFO">Executing JavaScript:
+document.querySelector('#maxpricerange').value = 20000;
+Without any arguments.</msg>
+<arg>document.querySelector('#maxpricerange').value = 20000;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.212402" elapsed="0.014544"/>
+</kw>
+<doc>This test select range of price</doc>
+<status status="PASS" start="2026-01-21T10:21:15.502290" elapsed="0.725657"/>
+</test>
+<test id="s1-t5" name="testcase5: Click to item information Page" line="54">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/section[2]/div/div[2]/div[2]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.230471" elapsed="0.320781"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath:/html/body/section[2]/div/div[2]/div[2]/a[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.552251" elapsed="0.044541"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-21T10:21:16.597808" level="INFO">Clicking element 'xpath:/html/body/section[2]/div/div[2]/div[2]/a[1]'.</msg>
+<arg>xpath:/html/body/section[2]/div/div[2]/div[2]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.597808" elapsed="0.127216"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath:/html/body/section[2]/div/div[1]/img</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-01-21T10:21:16.726048" elapsed="0.014268"/>
+</kw>
+<doc>This test click to item information Page</doc>
+<status status="PASS" start="2026-01-21T10:21:16.228941" elapsed="0.512397"/>
+</test>
+<status status="PASS" start="2026-01-21T10:21:10.511935" elapsed="6.230381"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Guitarweb" id="s1" pass="5" fail="0" skip="0">Guitarweb</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
